@@ -6,9 +6,9 @@ import nprogress from 'nprogress';
 import Router from 'next/router'
 
 function Layout({children}) {
-  Router.onRouteChangeStart=()=>nprogress.start()
-  Router.onRouteChangeComplete=()=>nprogress.done()
-  Router.onRouteChangeError=()=>nprogress.done()
+  Router.onRouteChangeStart=()=>{nprogress.start()}
+  Router.onRouteChangeComplete=()=>{nprogress.done()}
+  Router.onRouteChangeError=()=>{nprogress.done()}
   return (
     <>
       <HeadTags />
