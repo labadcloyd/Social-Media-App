@@ -1,5 +1,5 @@
 import App from 'next/app'
-import '../public/styles.css'
+import "semantic-ui-css/semantic.min.css";
 import Layout from '../components/Layout/Layout'
 
 class MyApp extends App{
