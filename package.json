@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
@@ -35,5 +35,18 @@
     "socket.io-client": "^2.3.0",
     "uuid": "^8.2.0",
     "validator": "^13.0.0"
-  }
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labadcloyd/Social-Media-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labadcloyd/Social-Media-App/issues"
+  },
+  "homepage": "https://github.com/labadcloyd/Social-Media-App/pages/index.js",
+  "description": ""
 }
