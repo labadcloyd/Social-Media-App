@@ -10,7 +10,7 @@ export const HeaderMessage = () => {
     <Message
       color="teal"
       header={signupRoute ? "Get Started" : "Welcome Back"}
-      icon={signupRoute ? "settings" : "null"}
+      icon={signupRoute ? "settings" : "privacy"}
       content={signupRoute ? "Create New Account" : "Login with Email and Password"}
     />
   );
