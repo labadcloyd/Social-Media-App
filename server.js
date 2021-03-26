@@ -12,13 +12,8 @@ connectDB();
 app.prepare().then(() => {
   const server = express()
 
-  server.get('/a', (req, res) => {
-    return app.render(req, res, '/a', req.query)
-  })
-
-  server.get('/b', (req, res) => {
-    return app.render(req, res, '/b', req.query)
-  })
+  server.use("/api/signup", require("./api/signup"));
+  server.use("/api/auth", require("./api/auth"));
 
   server.all('*', (req, res) => {
     return handle(req, res)
